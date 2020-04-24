@@ -12,6 +12,22 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
     {
         type: "input",
+        name: "projectName",
+        message: "What is your project's name?"
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Please write a short description of your project?"
+    },
+
+    {
+        type: "input",
+        name: "projectURL",
+        message: "What is the url to your project?"
+    },
+    {
+        type: "input",
         name: "username",
         message: "What is your github username?"
     },
@@ -22,23 +38,15 @@ const questions = [
     },
     {
         type: "input",
-        name: "project url",
-        message: "What is the url to your project?"
+        name: "technology",
+        message: "What kind of technologies were used to develop this project?"
     },
     {
-        type: "input",
-        name: "projectName",
-        message: "What is your project's name?"
-    },
-    {
-        type: "input",
-        name: "decription",
-        message: "Please write a short description of your project?"
-    },
-    {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "What kind of license should your project have?"
+        message: "What kind of license should your project have?",
+        choices: ["MIT", "APACHE", "GPL", "AGPL"]
+
     },
     {
         type: "input",
