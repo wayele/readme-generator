@@ -1,7 +1,7 @@
 function generateMarkdown(data) {
   return `
 # ${data.projectName}\n
-# Table of Contents
+## Table of Contents
 <!--ts-->
    * [Project Description](#project-description)
    * [Technologies Used](#technologies-used) 
@@ -13,27 +13,27 @@ function generateMarkdown(data) {
    * [Inquiries](#inquiries)
    * [Developer Info](#developer-info)
 <!--te-->
-# Project Description
+## Project Description
 ${data.description}\n
 Project url: 
-${data.projectURL}
-# Technologies Used
+(https://github.com/${data.username}/${data.projectName})
+## Technologies Used
 ${data.technology}\n
-# Dependencies
+## Dependencies
 ${data.dependencies}
-# Tests
+## Tests
 ${data.tests}
-# Using Repo
+## Using Repo
 ${data.usingRepo}
-# Contributing to the repo
+## Contributing to the repo
 ${data.contributing}
-# Licenses
+## Licenses
 ${pickLicense(data.license)}
 ${data.license}
-# Inquiries
-${data.inquiries}
-${contact()}
-# Developer Info:\n
+## Inquiries
+${data.inquiries}\n
+${contact(data.inquiries, data.email)}
+## Developer Info:\n
 Github username: ${data.username}\n
 Email: ${data.email}
 `;
@@ -51,13 +51,13 @@ const pickLicense = (license) => {
   return "";
 }
 
-const contact = (inquiries) => {
+const contact = (inquiries, email) => {
   if (inquiries === "Yes") {
-    return `${data.username}`
-  } else if (inquiries === "No") {
-    return "";
+    return `${email}`
   }
-
+  return ""
 }
 
-module.exports = generateMarkdown, pickLicense;
+
+
+module.exports = generateMarkdown;

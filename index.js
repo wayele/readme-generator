@@ -22,11 +22,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "projectURL",
-        message: "What is the url to your project?"
-    },
-    {
-        type: "input",
         name: "username",
         message: "What is your github username?"
     },
