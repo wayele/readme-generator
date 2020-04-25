@@ -20,7 +20,6 @@ const questions = [
         name: "description",
         message: "Please write a short description of your project?"
     },
-
     {
         type: "input",
         name: "projectURL",
@@ -45,7 +44,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What kind of license should your project have?",
-        choices: ["MIT", "APACHE", "GPL", "AGPL"]
+        choices: ["MIT", "APACHE", "GPL", "AGPL", "No license"]
 
     },
     {
@@ -68,7 +67,12 @@ const questions = [
         name: "contributing",
         message: "What does the user need to know about contributing to the repo?"
     },
-
+    {
+        type: "list",
+        name: "inquiries",
+        message: "Can people contact you with questions?",
+        choices: ["Yes", "No"]
+    }
 ];
 
 
@@ -79,21 +83,11 @@ async function writeToFile(fileName, data) {
         const markDown = generateMarkDown(data)
         await writeFileAsync("readme.md", markDown);
         console.log("successfully wrote to readme.md")
-        // // return new Promise((resolve, reject) => {
-        // await fs.writeFile(fileName, generateMarkDown(data), function (err, res) {
-        //     if (err) {
-        //         // return reject(err);
-        //         return console.log(err);
-        //     }
 
-        //     // resolve(data);
-        //     console.log(res)
-        // })
     } catch (err) {
         console.log(err);
     }
 }
-// })
 
 
 function init() {

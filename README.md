@@ -1,42 +1,42 @@
 
-# askldjfal
+# README.MD Generator
 
 # Table of Contents
 <!--ts-->
-   * [askldjfal](#askldjfal)
-   * [Table of contents](#table-of-contents)
-   * [Project Description] (#project-description)
-   * [Project url](#project-url)
-   * [Developer Info](#developer-info)
-   * [Technoloies Used](#technologies-used)
-   * [Licenses](#licenses)
-   * [Dependencies](#dependecies)
+   * [Project Description](#project-description)
+   * [Technologies Used](#technologies-used) 
+   * [Dependencies](#dependencies)
    * [Tests](#tests)
-   * [UsingRepo](#using-repo)
-   * [Contributing](#contributing)
+   * [Using Repo](#using-repo)
+   * [Contributing to the repo](#contributing-to-the-repo)
+   * [Licenses](#licenses)
+   * [Inquiries](#inquiries)
+   * [Developer Info](#developer-info)
 <!--te-->
-
 # Project Description
-asdfjasdkfj
+This application generates a readme file based on user responses for a series of questions from the command line. All user responses are logged and used to write and construct a readme file that can be used for different types of projects. 
 
 Project url: 
-\asfkajsfdlkas
+github.com/wayele/readme-generator
+# Technologies Used
+JavaScript, Node JS, npm
+
+# Dependencies
+fs node library, inquirer npm package, axios, util
+# Tests
+npm run test
+# Using Repo
+Repo can be used for multiple applications to generate a readme file
+# Contributing to the repo
+Contributions are always welcome
+# Licenses
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+MIT
+# Inquiries
+No
+undefined
 # Developer Info:
 
-Github username: asdlfkjasdfl
-Email: ower
+Github username: wayele
 
-# Technologies Used
-laksdjf
-
-# Licenses
-
-GPL
-# Dependencies
-klasjdfl
-# Tests
-oiqweuroiqew
-# Using the repo
-alskdfjas
-# Contributing to the repo
-lakjsdflaksd
+Email: user@email.com
