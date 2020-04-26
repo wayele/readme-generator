@@ -24,7 +24,7 @@ Node JS, JavaScript, npm packages,
 ## Screenshots
 User is asked a series of questions requiring response <img src="./scrnshots/readmeCLI_scrnshot.png">
 A generated readme file based on the user's response <img src="./scrnshots/APIreadme_scrnshot.png">
-A generated readme file from github <img src="./scrnshots/AIPwebreadme_scrnshot.png">
+A generated readme file from github <img src="./scrnshots/APIwebreadme_scrnshot.png">
 
 ## Dependencies
 npm install
